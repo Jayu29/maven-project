@@ -1,4 +1,0 @@
-FROM tomcat:9.0.80-jdk8
-LABEL author: prakash
-RUN apt-get update -y && \
-COPY /var/lib/jenkins/workspace/jenkins-docker-cicd/target/webapps.war -O usr/local/tomcat/webapps/Webapp.war
